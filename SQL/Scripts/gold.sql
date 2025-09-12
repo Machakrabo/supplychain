@@ -1,3 +1,26 @@
+/*
+=========================================
+Gold Layer Schema
+=========================================
+Purpose:
+- The Gold layer stores curated, aggregated, and business-ready data.
+- It is designed for:
+  * Business Intelligence (BI) dashboards
+  * Advanced analytics and machine learning
+  * Direct consumption by end-users
+- Gold tables are often fact/dimension models or aggregated marts.
+
+Warning:
+- Gold data is derived from Silver, not directly from Bronze.
+- Schema changes here can break downstream reports/dashboards.
+- Aggregations must be validated against business definitions.
+
+Best Practices:
+- Implement star schema or data marts for specific business domains
+  (e.g., Sales, Finance, Inventory).
+- Ensure versioning or change tracking for key metrics.
+- Only expose curated and validated data to business users.
+*/
 USE MashaDB;
 GO
 CREATE TABLE mashagold.locations(
