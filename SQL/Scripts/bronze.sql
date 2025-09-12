@@ -1,0 +1,69 @@
+/*
+=========================================
+Bronze Layer Schema
+=========================================
+Purpose:
+- The Bronze layer is the raw data storage layer.
+- It is designed to hold ingested data with minimal transformations.
+- Typically stores transactional-level data that will later feed into
+  Silver (cleansed) and Gold (aggregated/curated) layers.
+
+Warning:
+- Once the code is executed, the tables will be created.
+- If the script is re-executed, SQL Server will throw an error because
+  the tables already exist (unless DROP/IF EXISTS logic is added).
+- Run with caution in production environments.
+
+Best Practices:
+- Use schema-qualified names (e.g., mashabronze.table_name).
+- Avoid making schema changes directly in production without testing.
+- Use DROP TABLE IF EXISTS if you want to re-create tables safely.
+*/
+USE MashaDB;
+GO
+CREATE TABLE mashabronze.locations(
+loc_id VARCHAR(50),
+loc_details VARCHAR(50),
+loc_region VARCHAR(50),
+PRIMARY KEY(loc_id)
+);
+GO
+CREATE TABLE mashabronze.product(
+prd_id VARCHAR(50),
+prd_season VARCHAR(50),
+prd_price VARCHAR(50),
+prd_desc VARCHAR(50),
+prd_size VARCHAR(50),
+prd_family VARCHAR(50),
+prd_sku VARCHAR(50),
+PRIMARY KEY(prd_id)
+);
+GO
+CREATE TABLE mashabronze.currency(
+currency_id VARCHAR(50),
+currency_desc VARCHAR(50),
+PRIMARY KEY(currency_id)
+);
+--DROP TABLE mashabronze.currency;
+GO
+CREATE TABLE mashabronze.calendar(
+dates DATE,
+holidays INT
+PRIMARY KEY(dates)
+);
+GO
+CREATE TABLE mashabronze.actuals_qty (
+   dates DATE,
+   loc_id VARCHAR(50),
+   prd_id VARCHAR(50),
+   actuals_qty INT,
+   sales_qty INT,
+   sales_forecast_qty INT,
+   sales_revenue DECIMAL(15,2),
+   currency_id VARCHAR(50),
+   PRIMARY KEY(dates, loc_id, prd_id),
+   FOREIGN KEY(loc_id) REFERENCES mashabronze.locations(loc_id),
+   FOREIGN KEY(prd_id) REFERENCES mashabronze.product(prd_id),
+   FOREIGN KEY(dates) REFERENCES mashabronze.calendar(dates),
+   FOREIGN KEY(currency_id) REFERENCES mashabronze.currency(currency_id)
+);
