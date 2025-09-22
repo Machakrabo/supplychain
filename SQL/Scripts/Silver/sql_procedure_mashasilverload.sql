@@ -1,3 +1,12 @@
+/*
+Purpose: This procedure loads and transforms data from the Bronze to the Silver layer. 
+It removes duplicates, converts data types, enriches fact tables with dimension details, calculates sales values, and ensures standardized data. 
+It prepares the Silver layer to support clean, consistent, and analysis-ready datasets to be uploaded in the gold layer.
+
+Warnings: Improper joins or unmatched keys can result in NULLs or incorrect data updates. 
+Overwriting keys like prd_id or loc_id may corrupt relationships. Also, each time new datasets are uploaded, the old dataset has to be deleted.
+*/
+
 CREATE OR ALTER PROCEDURE mashasilver.load_mashasilver AS
 BEGIN
  --DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
