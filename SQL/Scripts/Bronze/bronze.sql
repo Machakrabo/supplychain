@@ -28,7 +28,7 @@ CREATE TABLE mashabronze.locations(
 loc_id VARCHAR(50),
 loc_details NVARCHAR(MAX),
 loc_region VARCHAR(50),
-PRIMARY KEY(loc_id)
+--PRIMARY KEY(loc_id)
 );
 GO
 IF OBJECT_ID ('mashabronze.product', 'U')IS NOT NULL
@@ -41,7 +41,7 @@ prd_desc VARCHAR(50),
 prd_size VARCHAR(50),
 prd_family VARCHAR(50),
 prd_sku VARCHAR(50),
-PRIMARY KEY(prd_id)
+--PRIMARY KEY(prd_id)
 );
 GO
 IF OBJECT_ID ('mashabronze.currency', 'U')IS NOT NULL
@@ -49,7 +49,7 @@ IF OBJECT_ID ('mashabronze.currency', 'U')IS NOT NULL
 CREATE TABLE mashabronze.currency(
 currency_id VARCHAR(50),
 currency_desc VARCHAR(50),
-PRIMARY KEY(currency_id)
+--PRIMARY KEY(currency_id)
 );
 
 GO
@@ -58,7 +58,7 @@ IF OBJECT_ID ('mashabronze.calendar', 'U')IS NOT NULL
 CREATE TABLE mashabronze.calendar(
 dates DATE,
 holidays INT
-PRIMARY KEY(dates)
+--PRIMARY KEY(dates)
 );
 GO
 IF OBJECT_ID ('mashabronze.actuals_qty', 'U')IS NOT NULL
@@ -70,7 +70,7 @@ CREATE TABLE mashabronze.actuals_qty (
    prd_price VARCHAR(50),
    currency_id VARCHAR(50),
    actuals_qty INT,
-   PRIMARY KEY(dates, loc_id, prd_id),
+   --PRIMARY KEY(dates, loc_id, prd_id),
    --dwh_create_date DATETIME2 DEFAULT GETDATE()
    --FOREIGN KEY(loc_id) REFERENCES mashabronze.locations(loc_id),
    --FOREIGN KEY(prd_id) REFERENCES mashabronze.product(prd_id),
