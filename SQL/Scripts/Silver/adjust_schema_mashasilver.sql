@@ -63,6 +63,8 @@ CREATE TABLE mashasilver.actuals_qty (
    actuals_qty INT,
    prd_price VARCHAR(50),
    currency_id VARCHAR(50),
+   actuals_sales DECIMAL(18,0),
+   sales_forecast DECIMAL(18,0),
    dwh_create_date DATETIME2 DEFAULT GETDATE()
    --PRIMARY KEY(dates, loc_id, prd_id),
    --FOREIGN KEY(loc_id) REFERENCES mashasilver.locations(loc_id),
