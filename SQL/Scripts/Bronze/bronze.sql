@@ -70,7 +70,8 @@ CREATE TABLE mashabronze.actuals_qty (
    prd_id VARCHAR(50),
    actuals_qty INT,
    prd_price VARCHAR(50),
-   currency_id VARCHAR(50)
+   currency_id VARCHAR(50),
+   dwh_create_date DATETIME2 DEFAULT GETDATE()
    --PRIMARY KEY(dates, loc_id, prd_id),
    --dwh_create_date DATETIME2 DEFAULT GETDATE()
    --FOREIGN KEY(loc_id) REFERENCES mashabronze.locations(loc_id),
