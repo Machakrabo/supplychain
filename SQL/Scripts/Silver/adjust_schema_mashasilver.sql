@@ -12,7 +12,6 @@ This script drops existing tables if they already exist.
 The script assumes the mashasilver schema already exists. If not, you'll get errors unless you create it first.
 No Error Handling
 */
-
 USE MashaDB;
 GO
 IF OBJECT_ID ('mashasilver.locations', 'U')IS NOT NULL
@@ -71,6 +70,7 @@ CREATE TABLE mashasilver.actuals_qty (
    loc_region VARCHAR(50),
    prd_desc VARCHAR(50),
    prd_size VARCHAR(50),
+   prd_sku VARCHAR(50),
    prd_family VARCHAR(50),
    prd_seasons VARCHAR(50),
    holidays INT,
