@@ -35,12 +35,13 @@ IF OBJECT_ID ('mashabronze.product', 'U')IS NOT NULL
   DROP TABLE mashabronze.product;
 CREATE TABLE mashabronze.product(
 prd_id VARCHAR(50),
-prd_season VARCHAR(50),
-prd_price VARCHAR(50),
 prd_desc VARCHAR(50),
 prd_size VARCHAR(50),
 prd_family VARCHAR(50),
 prd_sku VARCHAR(50),
+prd_seasons VARCHAR(50),
+prd_price VARCHAR(50),
+currency_desc VARCHAR(50)
 --PRIMARY KEY(prd_id)
 );
 GO
@@ -67,9 +68,9 @@ CREATE TABLE mashabronze.actuals_qty (
    dates DATE,
    loc_id VARCHAR(50),
    prd_id VARCHAR(50),
-   prd_price VARCHAR(50),
-   currency_id VARCHAR(50),
    actuals_qty INT,
+   prd_price VARCHAR(50),
+   currency_id VARCHAR(50)
    --PRIMARY KEY(dates, loc_id, prd_id),
    --dwh_create_date DATETIME2 DEFAULT GETDATE()
    --FOREIGN KEY(loc_id) REFERENCES mashabronze.locations(loc_id),
