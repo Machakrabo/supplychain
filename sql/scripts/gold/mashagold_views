@@ -1,4 +1,19 @@
+/* ==========================================================================================
+   Purpose: This script re-creates several views in the [mashagold] schema for use in analytics 
+   tools such as Power BI reporting. These views are built to expose
+   structured data from various underlying dimension and fact tables in a clean and 
+   consistent format.
+   Views Created:
+   - dim_actual_sales :The views use LEFT JOINs and basic SELECTs to flatten and standardize datafor ease of use in BI tools.
+   - dim_locations
+   - dim_products
+   - dim_currency
+   - dim_calendar
 
+ Warning:This script will DROP and RECREATE views if they already exist. Any existing permissions, dependencies, or custom modifications to those views
+   will be lost.
+   ==========================================================================================
+*/
 IF OBJECT_ID('mashagold.dim_actual_sales', 'V') IS NOT NULL
 BEGIN
     DROP VIEW mashagold.dim_actual_sales;
