@@ -1,0 +1,1 @@
+EXECUTE mashagold.load_mashagold
