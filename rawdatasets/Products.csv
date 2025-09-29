@@ -1,0 +1,35 @@
+prd_id,prd_desc,prd_size,prd_family,prd_sku,prd_seasons,prd_price,currency_desc
+VSHJX3,Coco-cola-33 cl,33 cl,Beverages,SKU 90312,All Year,2,Euro
+VSHJX4,Coco-cola -50 cl,50 cl,Beverages,SKU 90313,All Year,2.9,Euro
+MNFGK1,Peach-Ice Tea -33 cl ,33cl,Beverages,SKU 90314,Summer,2,Euro
+MNFGK2,Peach-Ice Tea -50 cl,50 cl,Beverages,SKU 90315,Summer,2.9,Euro
+BNFJY5,Mineral  water -50 cl,50 cl,Beverages,SKU 90316,All Year,2.5,Euro
+DFRHD6,Lemonade -33cl,33 cl,Beverages,SKU 90317,Summer,4.5,Euro
+ERKYE7,Soda Water - 50cl,50 cl,Beverages,SKU 90318,All Year,2.9,Euro
+DWQW8,Raspberry Iced Tea -33 cl,33 cl,Beverages,SKU 90319,Summer,2.9,Euro
+DFRGV9,Strawberry Drink -33 cl,33 cl,Beverages,SKU 90320,Summer,4.5,Euro
+WSDCV3,Fruit Salad,1 bowl,Desserts,SKU 90321,Summer,6.5,Euro
+LKUQW1,Yogurt Pots - Gourmet,1 bowl,Desserts,SKU 90322,All Year,10,Euro
+LKUQW2,Yogurt Pots - Classic,1 bowl,Desserts,SKU 90323,All Year,7.5,Euro
+ZDSGJ1,Pancakes- Box to share,1 box -9 pc,Desserts,SKU 90324,All Year,18,Euro
+ZDSGJ2,Pancakes- Box to share - Classic,1 box -9 pc,Desserts,SKU 90325,All Year,12.5,Euro
+ZDSGJ3,Pancakes -Gourmet,1 box -3 pc,Desserts,SKU 90326,All Year,5.5,Euro
+ZDSGJ4,Pancakes - Customized,1 box -3 pc,Desserts,SKU 90327,All Year,6,Euro
+VBFGT1,Gourmet- Salades,1 bowl,Salades,SKU 90328,All Year,12,Euro
+VBFGT2,Gourmet- Salades Menu,1 bowl,Salades,SKU 90329,All Year,18,Euro
+SQFCJ1,homemade Crepes-  customised,1 plate ,Crepes,SKU 90330,All Year,8.5,Euro
+SQFCJ2,homemade Crepes-  classic,1 plate ,Crepes,SKU 90331,All Year,5.5,Euro
+SQFCJ3,homemade Crepes-  savory,1 plate ,Crepes,SKU 90332,All Year,12,Euro
+SQFCJ4,homemade Crepes-  savory (Menu),1 plate ,Crepes,SKU 90333,All Year,18,Euro
+CVINS1,Signature Milkshakes,1 glass,Milkshakes,SKU 90334,All Year,8.5,Euro
+CVINS2,Classic Milkshakes,1 glass,Milkshakes,SKU 90335,All Year,6.5,Euro
+SEASON1,Nougat Cake,1 pc,Cakes,SKU 90336,Winter,5,Euro
+SEASON2,Hot wine,1 glass,Wines,SKU 90337,Winter,4,Euro
+SEASON3,Warm Californian Breakfast,1 plate ,Breakfast,SKU 90338,Winter,10,Euro
+SEASON4,Warm Californian Breakfast - Children,2 plate ,Breakfast,SKU 90339,Winter,6,Euro
+WSDCV3,Fruit Salad,1 bowl,Desserts,SKU 90321,Summer,6.5,Euro
+LKUQW1,Yogurt Pots - Gourmet,1 bowl,Desserts,SKU 90322,All Year,10,Euro
+LKUQW2,Yogurt Pots - Classic,1 bowl,Desserts,SKU 90323,All Year,7.5,Euro
+ZDSGJ1,Pancakes- Box to share,1 box -9 pc,Desserts,SKU 90324,All Year,18,Euro
+ZDSGJ2,Pancakes- Box to share - Classic,1 box -9 pc,Desserts,SKU 90325,All Year,12.5,Euro
+ZDSGJ3,Pancakes -Gourmet,1 box -3 pc,Desserts,SKU 90326,All Year,5.5,Euro
